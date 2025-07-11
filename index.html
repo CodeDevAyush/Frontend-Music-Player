@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/utility.css">
+</head>
+
+<body>
+    <div class="fullscreenAppear flex remove">
+        <img src="https://i.scdn.co/image/ab67616d00001e020a47bbe7141fdfe0eb2cdba7" alt="">;
+    </div>
+    <header class="header flex justify-between">
+        <div class="leftheader flex">
+            <img src="images/logo.svg" alt="Spotify" id="logo">
+            <div class="home flex">
+                <button class="btn">
+                    <img src="images/home.svg" alt="Home" id="imglogo">
+                </button>
+                <div class="search flex">
+                    <button class="searchbtn btn">
+                        <img src="images/search.svg" alt="Search" id="imglogo">
+                    </button>
+
+                    <input placeholder="What do you want to play?" id="inputsearch">
+
+                    <span id="line">|</span>
+
+                    <button class="btn browsebtn flex">
+                        <img src="images/browse.svg" alt="Browse" id="imglogo">
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="rightheader flex">
+            <div class="login flex">
+                <button class="btn2">Sign up</button>
+                <button class="btn3 loginBtn">Log in</button>
+            </div>
+            <div class="profile flex">
+                <button>
+                    <div class="account">
+                    <div class="image flex justify-center align-center">M</div>
+                </div>
+                </button>    
+                <div class="accDetails">
+                    <ul>
+                        <li>
+                            <h4>Account</h4>
+                            <button>
+                                <img src="images/share.svg" alt="">
+                            </button>
+                        </li>
+                        <li>
+                            <h4>Profile</h4>
+                        </li>
+                        <li>
+                            <h4>Upgrade to Premium</h4>
+                            <button>
+                                <img src="images/share.svg" alt="">
+                            </button>
+                        </li>
+                        <li>
+                            <h4>Support</h4>
+                            <button>
+                                <img src="images/share.svg" alt="">
+                            </button>
+                        </li>
+                        <li>
+                            <h4>Download</h4>
+                            <button>
+                                <img src="images/share.svg" alt="">
+                            </button>
+                        </li>
+                        <li>
+                            <h4>Settings</h4>
+                        </li>
+                        <li>
+                            <h4>Log out</h4>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <button class="hamburger" aria-label="menu">
+                ☰
+            </button>
+            <div class="popup">
+                <div class="login2">
+                    <button class="btn3">Signup</button>
+                    <button class="btn3 loginBtn2">Login</button>   
+                </div>       
+            </div>
+        </div>
+    </header>
+    <div class="container flex">
+        <span class="newham">
+            <button class="hamburger" aria-label="menu">
+                ☰
+            </button>
+            <div class="popup">
+                <div class="open">
+                    <div class="lib2 flex justify-between align-center">
+                        <div>Your Libarary</div>
+                        <img src="images/plus.svg" alt="Plus" class="btn4">
+                    </div>
+                    <div class="box-container2">
+                        <div class="box2">
+                            <h4>Creat your first playlist</h4>
+                            <h5>it's easy, we'll help you</h5>
+                            <button class="btn5">Creat playlist</button>
+                        </div>
+                        <div class="box2">
+                            <h4>Let's find some podcasts to follow</h4>
+                            <h5>we'll keep you updated on new episodes</h5>
+                            <button class="btn5">Browse podcasts</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </span>
+        <div class="left">
+            <div class="lib flex justify-between align-center">
+                <div>Your Libarary</div>
+                <img src="images/plus.svg" alt="Plus" class="btn4">
+            </div>
+            <div class="box-container">
+                <div class="box">
+                    <h4>Creat your first playlist</h4>
+                    <h5>it's easy, we'll help you</h5>
+                    <button class="btn5">Creat playlist</button>
+                </div>
+                <div class="box">
+                    <h4>Let's find some podcasts to follow</h4>
+                    <h5>we'll keep you updated on new episodes</h5>
+                    <button class="btn5">Browse podcasts</button>
+                </div>
+            </div>
+            <div class="playlist">
+                    <ul>
+                    </ul>
+            </div>
+        </div>
+        <div class="right flex">
+            <div class="mainRight">
+                <h1>Tranding songs</h1>
+                <div class="cardCollection">
+                        <ul></ul>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="nowplaying">
+                <h2>Playing</h2>
+                <img src="https://i.scdn.co/image/ab67616d00001e020a47bbe7141fdfe0eb2cdba7" alt="">
+                <div class="name-cointainer">
+                    <div class="songName name1"></div>
+                    <div class="artistName name2"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer flex">
+        <div class="songinfo flex align-center">
+            <img src="images/music.svg" alt="" class="infoimg">
+            <div class="name-cointainer">
+                <div class="songName"></div>
+                <div class="artistName"></div>
+            </div>
+            <button>
+                <img src="images/plus.svg" alt="">
+            </button>
+        </div>
+        <div class="playbar">
+            <div class="control flex justify-center">
+                <button id="previous">
+                    <img src="images/previous.svg" alt="">
+                </button>
+                <button id="play">
+                    <img id="playBtn" src="images/play2.svg" alt="">
+                </button>
+                </button>
+                <button id="next">
+                    <img src="images/next.svg" alt="">
+                </button>
+            </div>
+            <div class="seekbar flex">
+                <div class="currTime flex align-center">00:00</div>
+                <div class="track flex">
+                    <div class="trackLine">
+                        <div class="playFill"></div>
+                    </div>
+                    <div class="circle"></div>
+                </div>
+                <div class="totalTime flex align-center">05:00</div>
+            </div>
+        </div>
+        <div class="tools flex">
+            <button class="nowplay">
+                <img src="images/nowplaying.svg" alt="">
+            </button>
+            <button class="lyrics">
+                <img src="images/lyrics.svg" alt="">
+            </button>
+            <button class="queue">
+                <img src="images/queue.svg" alt="">
+            </button>
+            <button class="connect">
+                <img src="images/connect.svg" alt="">
+            </button>
+            <div class="volume flex">
+                <button class="mute">
+                    <img src="images/volume.svg" alt="" id="mutebtn">
+                </button>
+                <div class="volumeTrack flex">
+                    <div class="volumeLine">
+                        <div class="volumeFill"></div>
+                    </div>
+                    <div class="circle2"></div>
+                </div>
+
+            </div>
+            <button class="miniplayer">
+                <img src="images/miniplayer.svg" alt="">
+            </button>
+            <button class="fullScreen">
+                <img src="images/fullscreen.svg" alt="">
+            </button>
+        </div>
+    </footer>
+    <script src="JavaScript/app.js"></script>
+</body>
+
+</html>

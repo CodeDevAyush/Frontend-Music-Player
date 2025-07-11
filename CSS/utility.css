@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.border {
+    height: 100px;
+    width: 100px;
+    border: 2px solid white;
+    margin: 4px;
+}
+
+.remove {
+    display: none !important;
+}
+
+.show {
+    display: block;
+}
+
+.flex {
+    display: flex;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.align-center {
+    align-items: center;
+}
+
+/* Scrollbar track */
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: transparent;
+    border-radius: 6px;
+}
+
+.right:hover::-webkit-scrollbar-thumb {
+    background: #555;
+}
+
+.playlist:hover::-webkit-scrollbar-thumb {
+    background: #555;
+}

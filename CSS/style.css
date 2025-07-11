@@ -1,0 +1,825 @@
+:root {
+    --bgcolor: black;
+    --inputcolor: #121212;
+    --inputcolor2: rgb(50, 48, 48);
+    --txtcolor: white;
+}
+
+body {
+    background-color: var(--bgcolor);
+    position: relative;
+}
+
+.header {
+    height: 7vh;
+    width: 100vw;
+    top: 0;
+    position: relative;
+    z-index: 1000;
+}
+
+#logo{
+    height: 35px;
+    width: 35px;
+    margin-left: 20px;
+}
+
+.btn{
+    border-radius: 50%;
+    border: 0;
+    height: 38px;
+    width: 38px;
+    margin-right: 4px;
+    padding: 7px;
+    background-color: var(--inputcolor);
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: var(--inputcolor2);
+}
+
+.home {
+    margin: 0px 30px;
+    gap: 5px;
+}
+
+#imglogo {
+    width: 78%;
+    height: 78%;
+    object-fit: contain;
+}
+
+.btn2 {
+    flex: 1;
+    height: 20px;
+    width: 70px;
+    margin: 10px 0px;
+    border: 0;
+    background-color: var(--bgcolor);
+    color: var(--txtcolor);
+    font-size: 15px;
+    cursor: pointer;
+}
+.btn2:hover {
+    font-weight: bold;
+    transition: 1s ease-out;
+}
+
+.btn3 {
+    height: 40px;
+    width: 90px;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.search {
+    position: relative;
+    width: 420px; 
+    align-items: center;
+}
+
+@media (max-width: 730px) {
+    #inputsearch {
+        display: none;
+    }
+
+    #line {
+        display: none;
+    }
+
+    .search {
+        width: 100px; 
+    }
+
+    .searchbtn {
+        position: relative;
+        left: 0;
+        top: 0;
+        transform: none;
+    }
+
+    .browsebtn {
+        position: relative;
+        left: 70px;
+        right: 0;
+        top: 0;
+        transform: none;
+    }
+
+}
+
+.rightheader{
+    margin: 13px 0px;
+    gap: 15px;
+    flex-shrink: 1;
+}
+
+.leftheader {
+    width: 50%;
+    margin-top: 1.5vh;
+    flex-shrink: 1;
+}
+
+#inputsearch {
+    border: 1px solid var(--txtcolor);
+    background-color: var(--inputcolor);
+    border-radius: 60px;
+    height: 40px;
+    width: 100%;
+    padding-left: 47px;
+    box-sizing: border-box;
+    color: var(--txtcolor);
+    font-size: 14px;
+    transition: 1s ease-out;
+}
+
+#inputsearch:hover {
+    background-color: var(--inputcolor2);
+}
+
+.searchbtn {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 30px;
+    width: 30px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.browsebtn {
+    position: absolute;
+    right: 8px;
+    top: 55%;
+    transform: translateY(-50%);
+    height: 30px;
+    width: 30px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    padding: 0;
+    object-fit: contain;
+} 
+
+#line {
+    position: absolute;
+    right: 53px;
+    top: 45%;
+    transform: translateY(-50%);
+    font-size: 27px;
+    color: var(--txtcolor);
+    padding: 0;
+}
+
+.login {
+    gap: 20px;
+    margin-right: 10px;
+}
+
+.profile {
+  height: 300px;
+  flex-direction: column;
+  align-items: end;
+  gap: 5px;
+}
+
+.profile button {
+  height: 38px;
+  width: 38px;
+  position: relative;
+  right: 10px;
+  object-fit: contain;
+  background-color: var(--bgcolor);
+  border: none;
+  cursor: pointer;
+}
+
+.account {
+  height: 30px;
+  width: 30px;
+  background-color: var(--inputcolor);
+  border-radius: 50%;
+  position: relative;
+  top: -4px;
+  right: 5px;
+  object-fit: contain;
+  padding: 8px;
+}
+
+.accDetails {
+  height: 250px;
+  width: 200px;
+  border-radius: 5px;
+  background-color: rgb(40 40 40);
+  z-index: 500;
+}
+
+.image {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background-color: rgb(80, 155, 245);
+}
+
+.accDetails ul {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 2px 5px;
+  /* gap: 10px; */
+}
+
+.accDetails ul li {
+  height: 28px;
+  padding: 3px 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  color: white;
+}
+
+.accDetails ul li:hover {
+  background-color: hsl(0deg 0% 24.31%);
+  border-radius: 3px;
+}
+
+.accDetails ul li button {
+  height: 15px;
+  width: 15px;
+  background-color: rgb(40 40 40);
+  border: none;
+}
+
+
+.newham {
+  display: none;
+  top: 15px;
+  height: 30px;
+  width: 50px;
+  position: absolute;
+}
+
+.hamburger {
+  display: none;
+  position: absolute;
+  right: 0;
+  font-size: 24px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  margin-right: 10px;
+  z-index: 1000;
+}
+
+.popup {
+  display: none;
+}
+
+@media (max-width: 1020px) {
+  .about {
+    display: none !important;
+  }
+
+  #line2 {
+    display: none !important;
+  }
+
+  .login {
+    display: none !important;
+  }
+
+  .left {
+    display: none;
+  }
+
+  .right {
+    width: 100% !important;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .newham {
+    display: block;
+  }
+
+  .mainRight > h1 {
+    margin-left: 40px;
+  }
+  .tools {
+    right: 0 !important;
+    flex-wrap: wrap;
+
+  }
+  .tools > button {
+    top: 0 !important;
+  }
+  .songinfo {
+    flex-wrap: wrap;
+  }
+  .volume {
+    top: 0 !important;
+  }
+}
+
+.newElement1 {
+    position: absolute;
+    right: 0;
+    height: 37vh;
+    width: 270px;
+    border: 1px solid white;
+    z-index: 500;
+    background-color: var(--inputcolor2);
+}
+.newElement2 {
+    position: absolute;
+    left: 0;
+    height: 77vh;
+    width: 270px;
+    border: 1px solid white;
+    z-index: 500;
+    background-color: var(--inputcolor2);
+}
+
+.container {
+  position: relative;
+    margin-top: 10px;
+    height: 80vh;
+    color: var(--txtcolor);
+    overflow: hidden;
+    flex: 1 3;
+}
+
+.left {
+    width: 23vw;
+    padding: 20px 10px;
+    background-color: var(--inputcolor);
+    margin: 4px;
+    border-radius: 5px;
+    object-fit: contain;
+    position: relative;
+}
+
+.popup {
+  margin: 40px 10px 0 0;
+  width: 200px;
+  padding: 10px;
+}
+
+.popup button {
+  margin-left: 5px;
+}
+
+.open {
+    width: 100%;
+    height: 100%;
+    background-color: var(--inputcolor);
+    border-radius: 5px;
+    object-fit: contain;
+    position: relative;
+}
+
+.right {
+    width: 77vw;
+    padding: 20px 20px;
+    background-color: var(--inputcolor);
+    margin: 4px;
+    margin-right: 7px;
+    border-radius: 5px;
+    max-height: 100vh;
+    overflow-y: scroll;
+    object-fit: contain;
+}
+
+.mainRight {
+  width: 100%;
+}
+
+.lib {
+  position: relative;
+  height: 5vh;
+  width: 80%;
+  padding: 0 10px;
+  margin-bottom: 20px;
+}
+
+.lib div {
+  left: 0;
+}
+
+.lib img {
+  right: 0;
+}
+.lib2 {
+  position: relative;
+  height: 5vh;
+  width: 90%;
+  padding: 0 5%;
+  background-color: var(--inputcolor);
+}
+
+.lib2 div {
+  left: 0;
+}
+
+.lib2 img {
+  right: 10px;
+}
+
+.btn4 {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 15px;
+}
+
+.box-container {
+  
+    display: flex;
+    flex-direction: column;
+    margin: 35px 0px;
+    height: 37vh;
+    width: 100%;
+    gap: 3vh;
+}
+.box-container2 {
+    display: flex;
+    flex-direction: column;
+    margin: 35px 0px;
+    height: 37vh;
+    width: 100%;
+    gap: 3vh;
+}
+
+.box {
+    border-radius: 7px;
+    background-color: var(--inputcolor2);
+    padding: 12px;
+    position: relative;
+    object-fit: contain;
+}
+
+.box h5 {
+    margin: 8px 0px;
+}
+.box2 {
+    border-radius: 7px;
+    background-color: var(--inputcolor2);
+    padding: 12px;
+    position: relative;
+    object-fit: contain;
+}
+
+.box2 h5 {
+    margin: 8px 0px;
+}
+
+.btn5 {
+    font-weight: bold;
+    margin-top: 10px;
+    height: 35px;
+    border-radius: 30px;
+    padding: 0px 10px;
+    cursor: pointer;
+    width: auto;
+}
+
+.playlist {
+  display: none;
+  height: 100%;
+  width: 90%;
+  padding: 0 10px 50px 10px;
+  position: relative;
+  /* background-color: var(--inputcolor2); */
+  overflow-y: scroll;
+  object-fit: contain;
+}
+
+.playlist ul {
+  font-size: 10px;
+}
+
+.playlist ul li {
+  width: 100%;
+  display: flex;
+  gap: 27px;
+  cursor: pointer;
+  margin: 12px 0;
+  padding: 8px;
+  position: relative;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.playlist ul li:hover {
+  background-color: var(--inputcolor2);
+}
+
+.playlist ul img {
+  height: 35px;
+  padding-top: 4px;
+}
+
+.playNow {
+  gap: 7px;
+}
+
+.cardCollection {
+    width: 100%;
+    padding: 10px 10px 50px 10px;
+    position: relative;
+    display: flex;
+}
+
+.cardCollection li:hover {
+    border-radius: 5px;
+    background-color: var(--inputcolor2);
+    .play {
+        opacity: 1;
+    }
+}
+
+.cardCollection ul {
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+}
+
+.cardCollection ul li {
+    width: 190px;
+    padding: 10px 10px 50px 10px;
+    position: relative;
+}
+
+.cardimg {
+    width: 100%;
+    object-fit: contain;
+    border-radius: 5px;
+}
+.card * {
+    padding-top: 3px;
+    cursor: pointer;
+}
+
+.play {
+    position: absolute;
+    z-index: 1;
+    right: 18px;
+    top: 125px;
+    height: 50px;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.nowplaying {
+  width: 40vw;
+  margin: 4px 0;
+  border-radius: 5px;
+  overflow-y: auto;
+  padding: 20px;
+  background-color: var(--inputcolor);
+  display: flex;
+  flex-direction: column;
+}
+
+.nowplaying h2 {
+  margin-bottom: 50px;
+}
+
+.nowplaying img {
+  border-radius: 5px;
+  margin-bottom: 30px;
+}
+
+.name1 {
+  font-size: 25px !important;
+}
+
+.name2 {
+  font-size: 20px !important;
+}
+
+footer {
+  width: 100vw;
+  position: relative;
+  justify-content: space-between;
+  bottom: 0;
+  padding-top: 10px;
+}
+
+.currPlay {
+  height: 50px;
+}
+
+.songinfo {
+  position: relative;
+  height: 60px;
+  width: 240px;
+  object-fit: contain;
+  margin-left: 20px;
+}
+.songinfo > img {
+  width: 15%;
+}
+
+.name-cointainer {
+  margin: 0 0 0 15px;
+  width: 60%;
+}
+
+.songName {
+  color: white;
+  font-size: 14px;
+}
+
+.artistName {
+  color: grey;
+  font-size: 12px;
+}
+
+.songinfo button {
+  position: absolute;
+  right: 0;
+  height: 20px;
+  width: 20px;
+  background-color: var(--bgcolor);
+  border: none;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.songinfo button img {
+  height: 20px;
+  width: 20px;
+
+}
+
+.playbar {
+  height: 65px;
+  width: 40%;
+}
+
+.control{
+  position: relative;
+}
+
+.control button{
+  background-color: var(--bgcolor);
+  border: none;
+  height: 35px;
+  width: 35px;
+  cursor: pointer;
+  margin: 0 10px;
+}
+
+.control button img{
+  height: 30px;
+}
+
+.seekbar {
+  position: relative;
+}
+
+.track {
+  position: relative;
+  padding: 7px 0;
+  cursor: pointer;
+  width: 100%;
+}
+
+.trackLine {
+  height: 3px;
+  width: 100%;
+  background: grey;
+}
+
+.playFill {
+  height: 3px;
+  width: 100%;
+  background: grey;
+  background: white;
+  pointer-events: none;
+}
+
+.circle {
+  position: absolute;
+  top: 2px;
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  background-color: white;
+  left: 0%;
+}
+
+.currTime, .totalTime {
+  color: grey;
+  font-size: 10px;
+  margin: 0 5px;
+  transition: 1s ease;
+}
+
+.tools {
+  height: 50px;
+  width: 20vw;
+  gap: 10px;
+  position: relative;
+  right: 20px;
+  justify-content: space-evenly;
+  object-fit: contain;
+  overflow: hidden;
+}
+
+.tools > button {
+  height: 12px;
+  width: 12px;
+  position: relative;
+  top:40%;
+  right: 0;
+  background-color: var(--bgcolor);
+  border: none;
+  cursor: pointer;
+}
+
+
+
+.volume {
+  position: relative;
+  top: 40%;
+  padding: 0 10px;
+  width: 148px;
+  gap: 4px;
+  height: 10px;
+}
+
+.mute {
+  margin-top: 2px;
+  height: 15px;
+  width: 15px;
+  position: relative;
+  right: 0;
+  background-color: var(--bgcolor);
+  border: none;
+  cursor: pointer;
+}
+
+.volumeTrack {
+  height: 10px;
+  position: relative;
+  padding: 7px 0;
+  cursor: pointer;
+  width: 100%;
+}
+
+.volumeLine {
+  height: 3px;
+  width: 100%;
+  background: grey;
+  position: relative;
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.volumeFill {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: rgb(5, 170, 5);
+  width: 0%;
+  min-width: 0; /* prevent it from having a minimum */
+  transition: width 0.1s ease-out; /* smooth effect */
+}
+
+.circle2 {
+  position: absolute;
+  top: 2px;
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  background-color: white;
+  left: 0%;
+}
+
+.fullscreenAppear {
+  height: 84vh;
+  width: 100vw;
+  background-color: rgb(49, 40, 40);
+  align-items: center;
+  justify-content: center;
+}
+
+.fullscreenAppear img {
+  height: 60%;
+  border-radius: 10px;
+}
