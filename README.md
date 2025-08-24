@@ -1,1 +1,1 @@
-Curretly working on it soom make it a full stack working project
+Curretly working on it soon make it a full stack working project
